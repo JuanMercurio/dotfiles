@@ -2,8 +2,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/preservim/nerdtree.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
+" Plug 'ycm-core/YouCompleteMe'
 
 Plug 'sainnhe/gruvbox-material' "cololscheme
 
@@ -33,7 +39,8 @@ set nobackup
 
 set scrolloff=5
 
-set tabstop=4 softtabstop=4
+set tabstop=4 softtabstop=0
+set expandtab
 set shiftwidth=4
 set smartindent
 
@@ -45,6 +52,13 @@ autocmd InsertLeave * :set relativenumber
 " Remaps
 
 map <SPACE> <Nop>
+
+
+" fuzzy find shortcut
+nnoremap <C-p> :Files<cr>
+
+" nerd tree toggle
+nnoremap <C-n> :NERDTreeToggle <cr>
 
 inoremap jk <Esc>
 
@@ -69,6 +83,8 @@ nnoremap <leader><leader>m :make<cr>
 
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-j> <c-w><c-j>
 
 nnoremap Q qq
 
