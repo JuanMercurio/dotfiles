@@ -3,6 +3,10 @@
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
 
+vim.cmd([[ set encoding=UTF-8]])
+vim.opt.encoding = "UTF-8"
+
+-- Best clipboard setting
 vim.opt.clipboard = "unnamedplus"
 
 vim.o.hlsearch = false
@@ -25,4 +29,6 @@ augroup END
 -- Init nvim tree setup
 require'nvim-tree'.setup()
 
-
+-- Init colorized setup
+vim.cmd([[ set termguicolors ]])
+require'colorizer'.setup()

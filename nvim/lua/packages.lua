@@ -8,6 +8,7 @@ return require('packer').startup(function()
 
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
+  use 'ryanoasis/vim-devicons'
 
   use 'tpope/vim-surround'
 
@@ -40,13 +41,16 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use "godlygeek/tabular" -- Quickly align text by pattern
+--  use "godlygeek/tabular" -- Quickly align text by pattern
   use "tpope/vim-repeat" -- Repeat actions better
 
 
-  use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
+ -- use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
 
-  use 'christoomey/vim-tmux-navigator' 
-
+  use 'christoomey/vim-tmux-navigator'
+  use 'norcalli/nvim-colorizer.lua'
   use 'morhetz/gruvbox'
+
+--  use 'mfussenegger/nvim-jdtls' java lsp integration in neovim
+
 end)
