@@ -1,4 +1,3 @@
-require('impatient')
 require('packages')
 require('settings')
 require('keymappings')
@@ -6,6 +5,3 @@ require('treesitter')
 require('lsp-installer')
 require('lsp-config')
 require('nvim-cmp')
-require('nvim-comment')
-require('telescope-conf')
-

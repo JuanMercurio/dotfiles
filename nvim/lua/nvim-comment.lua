@@ -1,5 +1,2 @@
-require('Comment').setup(){
-    mappings = {
-        extra = true
-    }
-}
+require('Comment').setup()
+
